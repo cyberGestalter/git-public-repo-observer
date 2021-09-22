@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/repo_bottom_margin"
+    android:elevation="2dp"
+    android:padding="@dimen/default_padding">
+
+    <ImageView
+        android:id="@+id/repo_photo"
+        android:layout_width="@dimen/item_photo_size"
+        android:layout_height="@dimen/item_photo_size"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/repo_id_margin"
+        app:layout_constraintEnd_toEndOf="@id/repo_photo"
+        app:layout_constraintStart_toStartOf="@id/repo_photo"
+        app:layout_constraintTop_toBottomOf="@id/repo_photo" />
+
+    <TextView
+        android:id="@+id/repo_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:textSize="@dimen/repo_name_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/repo_photo"
+        app:layout_constraintTop_toTopOf="@id/repo_photo" />
+
+    <TextView
+        android:id="@+id/repo_owner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintStart_toStartOf="@id/repo_name"
+        app:layout_constraintTop_toBottomOf="@id/repo_name" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/repo_name"
+        app:layout_constraintTop_toBottomOf="@id/repo_owner" />
+
+    <TextView
+        android:id="@+id/repo_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintStart_toStartOf="@id/repo_name"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

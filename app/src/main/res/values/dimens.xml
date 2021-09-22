@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--margins-->
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="repo_id_margin">4dp</dimen>
+    <dimen name="repo_bottom_margin">4dp</dimen>
+
+    <!--paddings-->
+    <dimen name="default_padding">8dp</dimen>
+
+    <!--text sizes-->
+    <dimen name="repo_name_text_size">18sp</dimen>
+
+    <!--element sizes-->
+    <dimen name="item_photo_size">50dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+</resources>
